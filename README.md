@@ -11,3 +11,5 @@ BedrockAdderRenderer set-pack <itemsadder_generated_zip> <vanilla_client_jar> [c
 BedrockAdderRenderer render <size> <namespace:id> <output_png> [cacheDir]
 
 BedrockAdderRenderer clear-pack [cacheDir]
+
+Third-party: Uses LOOHP’s BlockModelRenderer (GPL v3.0)
