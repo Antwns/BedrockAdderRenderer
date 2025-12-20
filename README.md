@@ -1,4 +1,5 @@
 Usage:
+
 BedrockAdderRenderer help
 
 BedrockAdderRenderer render-model-file <size> <model_json> <output_png> [cacheDir]
