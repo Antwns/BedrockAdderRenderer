@@ -1,0 +1,116 @@
+{
+    "providers": [
+		{
+            "type": "space",
+            "advances": {
+                " ": 4,
+                "\u200c": 0,
+				"\ufb06": -6,
+				"\ufb07": 114.5,
+				"\ufb09": -17,
+				"\u2011": -6,
+
+				"\u2010": -179,
+				"\u2012": -100
+            }
+        },
+		{
+            "type": "bitmap",
+            "file": "expansion:items/armor/icons/helmet.png",
+			"ascent": -11,
+			"height": 16,
+			"chars": ["\uff00"]
+		},
+		{
+            "type": "bitmap",
+            "file": "expansion:items/armor/icons/chestpiece.png",
+			"ascent": -24,
+			"height": 16,
+			"chars": ["\uff01"]
+		},
+		{
+            "type": "bitmap",
+            "file": "expansion:items/armor/icons/leggings.png",
+			"ascent": -38,
+			"height": 16,
+			"chars": ["\uff02"]
+		},
+		{
+            "type": "bitmap",
+            "file": "expansion:items/armor/icons/boots.png",
+			"ascent": -50,
+			"height": 16,
+			"chars": ["\uff03"]
+		},
+		{
+            "type": "bitmap",
+            "file": "expansion:items/armor/icons/helmet_empty.png",
+			"ascent": -11,
+			"height": 16,
+			"chars": ["\uff04"]
+		},
+		{
+            "type": "bitmap",
+            "file": "expansion:items/armor/icons/chestpiece_empty.png",
+			"ascent": -24,
+			"height": 16,
+			"chars": ["\uff05"]
+		},
+		{
+            "type": "bitmap",
+            "file": "expansion:items/armor/icons/leggings_empty.png",
+			"ascent": -38,
+			"height": 16,
+			"chars": ["\uff06"]
+		},
+		{
+            "type": "bitmap",
+            "file": "expansion:items/armor/icons/boots_empty.png",
+			"ascent": -50,
+			"height": 16,
+			"chars": ["\uff07"]
+		},
+		{
+            "type": "bitmap",
+            "file": "expansion:gui/sprites/hud/throttle/rail.png",
+			"ascent": 0,
+			"height": 16,
+			"chars": ["\ufd01"]
+		},
+		{
+            "type": "bitmap",
+            "file": "expansion:gui/sprites/hud/throttle/handle_1.png",
+			"ascent": 0,
+			"height": 16,
+			"chars": ["\ufd02"]
+		},
+		{
+            "type": "bitmap",
+            "file": "expansion:gui/sprites/hud/throttle/handle_2.png",
+			"ascent": 0,
+			"height": 16,
+			"chars": ["\ufd03"]
+		},
+		{
+            "type": "bitmap",
+            "file": "expansion:gui/sprites/hud/throttle/handle_3.png",
+			"ascent": 0,
+			"height": 16,
+			"chars": ["\ufd04"]
+		},
+		{
+            "type": "bitmap",
+            "file": "expansion:gui/sprites/hud/throttle/handle_4.png",
+			"ascent": 0,
+			"height": 16,
+			"chars": ["\ufd05"]
+		},
+		{
+            "type": "bitmap",
+            "file": "expansion:gui/sprites/hud/throttle/handle_5.png",
+			"ascent": 0,
+			"height": 16,
+			"chars": ["\ufd06"]
+		}
+	]
+}

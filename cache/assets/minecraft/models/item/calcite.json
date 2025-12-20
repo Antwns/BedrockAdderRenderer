@@ -1,0 +1,1 @@
+{"parent":"minecraft:block/calcite","overrides":[{"predicate":{"custom_model_data":10000},"model":"blocks:item/ia_auto/chiseled_marble_pillar"},{"predicate":{"custom_model_data":10001},"model":"item/calcite"}]}

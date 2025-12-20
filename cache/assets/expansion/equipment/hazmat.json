@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "humanoid": [
+      { "texture": "expansion:hazmat" }
+    ],
+    "humanoid_leggings": [
+      { "texture": "expansion:hazmat" }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "expansion:mobs/mod_drone",
+        "tints": []
+    }
+}

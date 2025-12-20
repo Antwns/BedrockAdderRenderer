@@ -1,0 +1,114 @@
+{
+  "model": {
+    "type": "minecraft:composite",
+    "models": 
+    [
+      {
+        "type": "minecraft:range_dispatch",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "entries": [
+          {
+            "threshold": 1,
+            "model": {
+              "type": "minecraft:model",
+              "model": "expansion:items/fuel_cell/mk1_frame"
+            }
+          },
+          {
+            "threshold": 2,
+            "model": {
+              "type": "minecraft:model",
+              "model": "expansion:items/fuel_cell/mk2_frame"
+            }
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:model",
+          "model": "expansion:items/fuel_cell/mk1_frame"
+        }
+      },
+      {
+        "type": "minecraft:select",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "cases": [
+          {
+            "when": "lacrymae",
+            "model": {
+              "type": "minecraft:range_dispatch",
+              "property": "minecraft:custom_model_data",
+              "index": 1,
+              "entries": [
+                {
+                  "threshold": 0,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "expansion:items/fuel_cell/volume/lacrymae/0"
+                  }
+                },
+                {
+                  "threshold": 10,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "expansion:items/fuel_cell/volume/lacrymae/20"
+                  }
+                },
+                {
+                  "threshold": 30,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "expansion:items/fuel_cell/volume/lacrymae/40"
+                  }
+                },
+                {
+                  "threshold": 40,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "expansion:items/fuel_cell/volume/lacrymae/50"
+                  }
+                },
+                {
+                  "threshold": 60,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "expansion:items/fuel_cell/volume/lacrymae/60"
+                  }
+                },
+                {
+                  "threshold": 80,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "expansion:items/fuel_cell/volume/lacrymae/80"
+                  }
+                },
+                {
+                  "threshold": 90,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "expansion:items/fuel_cell/volume/lacrymae/100"
+                  }
+                }
+              ],
+              "fallback": {
+                "type": "minecraft:model",
+                "model": "expansion:items/fuel_cell/volume/lacrymae/0"
+              }
+            }
+          },
+          {
+            "when": "rocket_fuel",
+            "model": {
+              "type": "minecraft:model",
+              "model": "expansion:items/fuel_cell/volume/lacrymae/0"
+            }
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:model",
+          "model": "expansion:items/fuel_cell/volume/lacrymae/0"
+        }
+      }
+    ]
+  }
+}

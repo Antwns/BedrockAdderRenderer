@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'hut.dev'
+version = '1.0.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.loohpjames.com/repository' }
+}
+
+dependencies {
+    implementation 'com.loohp:BlockModelRenderer:1.1.4.0'
+
+    implementation 'com.google.code.gson:gson:2.11.0'
+
+    implementation 'org.slf4j:slf4j-api:2.0.16'
+    runtimeOnly 'ch.qos.logback:logback-classic:1.5.12'
+}
+
+application {
+    mainClass = 'hut.dev.bedrockadderrenderer.BedrockAdderRendererMain'
+}

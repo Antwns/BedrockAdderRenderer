@@ -1,0 +1,1 @@
+{"parent":"minecraft:block/light_gray_concrete","overrides":[{"predicate":{"custom_model_data":10000},"model":"blocks:item/ia_auto/light_gray_asphalt"},{"predicate":{"custom_model_data":10001},"model":"blocks:item/ia_auto/light_gray_shingles"},{"predicate":{"custom_model_data":10002},"model":"item/light_gray_concrete"}]}

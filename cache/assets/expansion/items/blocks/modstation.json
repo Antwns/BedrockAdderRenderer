@@ -1,0 +1,49 @@
+{
+    "model": {
+      "type": "minecraft:select",
+      "property": "minecraft:custom_model_data",
+      "index": 0,
+      "cases": [
+        {
+          "when": "gui",
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:custom_model_data",
+            "index": 1,
+            "cases": [
+              {
+                "when": "buggy",
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "expansion:blocks/modstation/gui/buggy"
+                }
+              },
+              {
+                "when": "ship",
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "expansion:blocks/modstation/gui/ship"
+                }
+              },
+              {
+                "when": "mech",
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "expansion:blocks/modstation/gui/mech"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "expansion:blocks/modstation/gui/none"
+            }
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "expansion:blocks/modstation/modstation"
+      }
+    },
+    "oversized_in_gui": true
+  }

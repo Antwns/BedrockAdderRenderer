@@ -1,0 +1,1 @@
+{"parent":"minecraft:block/prismarine","overrides":[{"predicate":{"custom_model_data":10000},"model":"blocks:item/ia_auto/prismarine_circle_pavement"},{"predicate":{"custom_model_data":10001},"model":"item/prismarine"}]}

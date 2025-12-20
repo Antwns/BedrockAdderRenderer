@@ -1,0 +1,1 @@
+{"parent":"minecraft:block/red_sandstone","overrides":[{"predicate":{"custom_model_data":10000},"model":"blocks:item/ia_auto/red_sandstone_bricks"},{"predicate":{"custom_model_data":10001},"model":"blocks:item/ia_auto/small_red_sandstone_bricks"},{"predicate":{"custom_model_data":10002},"model":"item/red_sandstone"}]}

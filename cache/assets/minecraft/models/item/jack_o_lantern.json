@@ -1,0 +1,1 @@
+{"parent":"minecraft:block/jack_o_lantern","overrides":[{"predicate":{"custom_model_data":10000},"model":"blocks:block/soul_o_lantern/soul_o_lantern"},{"predicate":{"custom_model_data":10001},"model":"item/jack_o_lantern"}]}

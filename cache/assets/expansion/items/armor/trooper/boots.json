@@ -1,0 +1,7 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "expansion:items/armor/trooper/boots",
+        "tints": []
+    }
+}

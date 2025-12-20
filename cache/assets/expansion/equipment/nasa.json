@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "humanoid": [
+      { "texture": "expansion:nasa" }
+    ],
+    "humanoid_leggings": [
+      { "texture": "expansion:nasa" }
+    ]
+  }
+}

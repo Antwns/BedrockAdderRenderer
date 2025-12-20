@@ -1,0 +1,167 @@
+{
+    "model": {
+      "type": "minecraft:select",
+      "property": "minecraft:custom_model_data",
+      "index": 0,
+      "cases": [
+        {
+          "when": "gui",
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:custom_model_data",
+            "index": 1,
+            "cases": [
+              {
+                "when": "flash",
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "expansion:blocks/fabricator/gui/flash"
+                }
+              },
+              {
+                "when": "loader",
+                "model": {
+                  "type": "minecraft:range_dispatch",
+                  "property": "minecraft:custom_model_data",
+                  "entries": [
+                    {
+                      "threshold": 0,
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "expansion:blocks/fabricator/gui/loader/0"
+                      }
+                    },
+                    {
+                      "threshold": 1,
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "expansion:blocks/fabricator/gui/loader/1"
+                      }
+                    },
+                    {
+                      "threshold": 2,
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "expansion:blocks/fabricator/gui/loader/2"
+                      }
+                    },
+                    {
+                      "threshold": 3,
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "expansion:blocks/fabricator/gui/loader/3"
+                      }
+                    },
+                    {
+                      "threshold": 4,
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "expansion:blocks/fabricator/gui/loader/4"
+                      }
+                    },
+                    {
+                      "threshold": 5,
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "expansion:blocks/fabricator/gui/loader/5"
+                      }
+                    },
+                    {
+                      "threshold": 6,
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "expansion:blocks/fabricator/gui/loader/6"
+                      }
+                    },
+                    {
+                      "threshold": 7,
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "expansion:blocks/fabricator/gui/loader/7"
+                      }
+                    },
+                    {
+                      "threshold": 8,
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "expansion:blocks/fabricator/gui/loader/8"
+                      }
+                    },
+                    {
+                      "threshold": 9,
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "expansion:blocks/fabricator/gui/loader/9"
+                      }
+                    },
+                    {
+                      "threshold": 10,
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "expansion:blocks/fabricator/gui/loader/10"
+                      }
+                    },
+                    {
+                      "threshold": 11,
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "expansion:blocks/fabricator/gui/loader/11"
+                      }
+                    },
+                    {
+                      "threshold": 12,
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "expansion:blocks/fabricator/gui/loader/12"
+                      }
+                    },
+                    {
+                      "threshold": 13,
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "expansion:blocks/fabricator/gui/loader/13"
+                      }
+                    },
+                    {
+                      "threshold": 14,
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "expansion:blocks/fabricator/gui/loader/14"
+                      }
+                    },
+                    {
+                      "threshold": 15,
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "expansion:blocks/fabricator/gui/loader/15"
+                      }
+                    },
+                    {
+                      "threshold": 16,
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "expansion:blocks/fabricator/gui/loader/16"
+                      }
+                    }
+                  ],
+                  "fallback": {
+                    "type": "minecraft:model",
+                    "model": "expansion:blocks/fabricator/gui/loader/0"
+                  }
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "expansion:blocks/fabricator/gui/main"
+            }
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "expansion:blocks/fabricator/fabricator"
+      }
+    },
+    "oversized_in_gui": true
+  }

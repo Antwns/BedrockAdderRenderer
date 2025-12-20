@@ -1,0 +1,7 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "expansion:blocks/titanium_ore",
+        "tints": []
+    }
+}

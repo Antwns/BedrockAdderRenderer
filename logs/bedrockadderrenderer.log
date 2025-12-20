@@ -1,0 +1,78 @@
+[2025-12-19T00:01:10.631+02:00] Usage:
+[2025-12-19T00:01:10.633+02:00]   BedrockAdderRenderer help
+[2025-12-19T00:01:10.633+02:00]   BedrockAdderRenderer set-pack <itemsadder_generated_zip> <vanilla_client_jar> [cacheDir]
+[2025-12-19T00:01:10.633+02:00]   BedrockAdderRenderer render <size> <namespace:id> <output_png> [cacheDir]
+[2025-12-19T00:01:10.633+02:00]   BedrockAdderRenderer clear-pack [cacheDir]
+[2025-12-19T01:01:14.569+02:00] Usage:
+[2025-12-19T01:01:14.571+02:00]   BedrockAdderRenderer help
+[2025-12-19T01:01:14.571+02:00]   BedrockAdderRenderer set-pack <itemsadder_generated_zip> <vanilla_client_jar> [cacheDir]
+[2025-12-19T01:01:14.571+02:00]   BedrockAdderRenderer render <size> <namespace:id> <output_png> [cacheDir]
+[2025-12-19T01:01:14.571+02:00]   BedrockAdderRenderer clear-pack [cacheDir]
+[2025-12-19T01:01:26.369+02:00] Cache directory: E:\Workspace\BedrockAdderRenderer\cache
+[2025-12-19T01:01:26.371+02:00] Extracting vanilla jar assets from: C:\Users\Antwn\AppData\Roaming\.minecraft\versions\1.21.8\1.21.8.jar
+[2025-12-19T01:01:31.280+02:00] Extracting ItemsAdder generated.zip assets from: E:\Minecraft Stuff\New Public MCS\plugins\ItemsAdder\output\generated.zip
+[2025-12-19T01:01:34.197+02:00] Wrote pack state: cache\pack_state.json
+[2025-12-19T01:01:34.197+02:00] set-pack finished successfully.
+[2025-12-19T01:06:52.035+02:00] Cache directory: E:\Workspace\BedrockAdderRenderer\cache
+[2025-12-19T01:06:52.037+02:00] Extracting vanilla jar assets from: C:\Users\Antwn\AppData\Roaming\.minecraft\versions\1.21.8\1.21.8.jar
+[2025-12-19T01:06:55.594+02:00] Extracting ItemsAdder generated.zip assets from: E:\Minecraft Stuff\New Public MCS\plugins\ItemsAdder\output\generated.zip
+[2025-12-19T01:06:57.196+02:00] Wrote pack state: cache\pack_state.json
+[2025-12-19T01:06:57.196+02:00] set-pack finished successfully.
+[2025-12-19T01:08:29.046+02:00] Cache directory: E:\Workspace\BedrockAdderRenderer\cache
+[2025-12-19T01:08:29.048+02:00] Extracting vanilla jar assets from: C:\Users\Antwn\AppData\Roaming\.minecraft\versions\1.21.8\1.21.8.jar
+[2025-12-19T01:08:33.944+02:00] Extracting ItemsAdder generated.zip assets from: E:\Minecraft Stuff\New Public MCS\plugins\ItemsAdder\output\generated.zip
+[2025-12-19T01:08:36.140+02:00] Wrote pack state: cache\pack_state.json
+[2025-12-19T01:08:36.141+02:00] set-pack finished successfully.
+[2025-12-19T18:55:31.822+02:00] Loading texture: E:\Workspace\BedrockAdderRenderer\cache\assets\blocks\textures\block\cookie_block.png
+[2025-12-19T18:55:31.905+02:00] Rendering cube to: E:\Workspace\BedrockAdderRenderer\cookie_test.png
+[2025-12-19T18:55:31.991+02:00] Render finished. Wrote: E:\Workspace\BedrockAdderRenderer\cookie_test.png
+[2025-12-19T19:01:05.181+02:00] Loading texture: E:\Workspace\BedrockAdderRenderer\cache\assets\blocks\textures\block\cookie_block.png
+[2025-12-19T19:01:05.206+02:00] Rendering cube to: E:\Workspace\BedrockAdderRenderer\cookie_test.png
+[2025-12-19T19:01:05.274+02:00] Render finished. Wrote: E:\Workspace\BedrockAdderRenderer\cookie_test.png
+[2025-12-19T19:12:13.396+02:00] Loading texture: E:\Workspace\BedrockAdderRenderer\cache\assets\blocks\textures\block\cookie_block.png
+[2025-12-19T19:12:13.419+02:00] Rendering cube to: E:\Workspace\BedrockAdderRenderer\cookie_test.png
+[2025-12-19T19:12:13.484+02:00] Render finished. Wrote: E:\Workspace\BedrockAdderRenderer\cookie_test.png
+[2025-12-19T19:58:48.229+02:00]   BedrockAdderRenderer render-model-file <size> <model_json> <output_png> [cacheDir]
+[2025-12-19T19:58:48.245+02:00] Reading model json: E:\Workspace\BedrockAdderRenderer\cache\assets\workbenches\models\advanced_brewing_stand.json
+[2025-12-19T19:58:48.373+02:00] Rendering model to: E:\Workspace\BedrockAdderRenderer\brewing_test.png
+[2025-12-19T19:58:48.488+02:00] Render finished. Wrote: E:\Workspace\BedrockAdderRenderer\brewing_test.png
+[2025-12-19T20:12:08.171+02:00]   BedrockAdderRenderer render-model-file <size> <model_json> <output_png> [cacheDir]
+[2025-12-19T20:12:08.186+02:00] Reading model json: E:\Workspace\BedrockAdderRenderer\cache\assets\workbenches\models\advanced_brewing_stand.json
+[2025-12-19T20:12:08.318+02:00] Rendering model to: E:\Workspace\BedrockAdderRenderer\brewing_test.png
+[2025-12-19T20:12:08.442+02:00] Render finished. Wrote: E:\Workspace\BedrockAdderRenderer\brewing_test.png
+[2025-12-19T20:12:24.102+02:00]   BedrockAdderRenderer render-model-file <size> <model_json> <output_png> [cacheDir]
+[2025-12-19T20:12:24.116+02:00] Reading model json: E:\Workspace\BedrockAdderRenderer\cache\assets\workbenches\models\advanced_brewing_stand.json
+[2025-12-19T20:12:24.246+02:00] Rendering model to: E:\Workspace\BedrockAdderRenderer\brewing_test.png
+[2025-12-19T20:12:24.358+02:00] Render finished. Wrote: E:\Workspace\BedrockAdderRenderer\brewing_test.png
+[2025-12-19T20:23:19.145+02:00]   BedrockAdderRenderer render-model-file <size> <model_json> <output_png> [cacheDir]
+[2025-12-19T20:23:19.161+02:00] Reading model json: E:\Workspace\BedrockAdderRenderer\cache\assets\workbenches\models\advanced_brewing_stand.json
+[2025-12-19T20:23:19.313+02:00] Rendering model to: E:\Workspace\BedrockAdderRenderer\brewing_test.png
+[2025-12-19T20:23:19.438+02:00] Render finished. Wrote: E:\Workspace\BedrockAdderRenderer\brewing_test.png
+[2025-12-19T20:26:58.226+02:00]   BedrockAdderRenderer render-model-file <size> <model_json> <output_png> [cacheDir]
+[2025-12-19T20:26:58.254+02:00] Reading model json: E:\Workspace\BedrockAdderRenderer\cache\assets\ranged\models\frost_bow_2.json
+[2025-12-19T20:26:58.371+02:00] Rendering model to: E:\Workspace\BedrockAdderRenderer\bow_test.png
+[2025-12-19T20:26:58.462+02:00] Render finished. Wrote: E:\Workspace\BedrockAdderRenderer\bow_test.png
+[2025-12-19T20:47:46.201+02:00]   BedrockAdderRenderer render-model-file <size> <model_json> <output_png> [cacheDir]
+[2025-12-19T20:47:46.216+02:00] Reading model json: E:\Workspace\BedrockAdderRenderer\cache\assets\ranged\models\frost_bow_2.json
+[2025-12-19T20:47:46.301+02:00] Rendering model to: E:\Workspace\BedrockAdderRenderer\bow_test.png
+[2025-12-19T20:47:46.737+02:00] Render finished. Wrote: E:\Workspace\BedrockAdderRenderer\bow_test.png
+[2025-12-19T20:50:18.774+02:00]   BedrockAdderRenderer render-model-file <size> <model_json> <output_png> [cacheDir]
+[2025-12-19T20:50:18.790+02:00] Reading model json: E:\Workspace\BedrockAdderRenderer\cache\assets\ranged\models\frost_crossbow_2.json
+[2025-12-19T20:50:18.909+02:00] Rendering model to: E:\Workspace\BedrockAdderRenderer\crossbow_test.png
+[2025-12-19T20:50:19.239+02:00] Render finished. Wrote: E:\Workspace\BedrockAdderRenderer\crossbow_test.png
+[2025-12-19T20:51:11.026+02:00]   BedrockAdderRenderer render-model-file <size> <model_json> <output_png> [cacheDir]
+[2025-12-19T20:51:11.041+02:00] Reading model json: E:\Workspace\BedrockAdderRenderer\cache\assets\armors\models\forst_helmet.json
+[2025-12-19T20:51:11.160+02:00] Rendering model to: E:\Workspace\BedrockAdderRenderer\helmet_test.png
+[2025-12-19T20:51:11.391+02:00] Render finished. Wrote: E:\Workspace\BedrockAdderRenderer\helmet_test.png
+[2025-12-19T20:52:49.040+02:00]   BedrockAdderRenderer render-model-file <size> <model_json> <output_png> [cacheDir]
+[2025-12-19T20:52:49.055+02:00] Reading model json: E:\Workspace\BedrockAdderRenderer\cache\assets\armors\models\forst_helmet.json
+[2025-12-19T20:52:49.133+02:00] Rendering model to: E:\Workspace\BedrockAdderRenderer\helmet_test.png
+[2025-12-19T20:52:49.378+02:00] Render finished. Wrote: E:\Workspace\BedrockAdderRenderer\helmet_test.png
+[2025-12-19T20:52:57.196+02:00]   BedrockAdderRenderer render-model-file <size> <model_json> <output_png> [cacheDir]
+[2025-12-19T20:52:57.210+02:00] Reading model json: E:\Workspace\BedrockAdderRenderer\cache\assets\armors\models\forst_helmet.json
+[2025-12-19T20:52:57.291+02:00] Rendering model to: E:\Workspace\BedrockAdderRenderer\helmet_test.png
+[2025-12-19T20:52:57.506+02:00] Render finished. Wrote: E:\Workspace\BedrockAdderRenderer\helmet_test.png
+[2025-12-19T20:53:16.122+02:00]   BedrockAdderRenderer render-model-file <size> <model_json> <output_png> [cacheDir]
+[2025-12-19T20:53:16.137+02:00] Reading model json: E:\Workspace\BedrockAdderRenderer\cache\assets\ranged\models\frost_bow_2.json
+[2025-12-19T20:53:16.221+02:00] Rendering model to: E:\Workspace\BedrockAdderRenderer\bow_test.png
+[2025-12-19T20:53:16.449+02:00] Render finished. Wrote: E:\Workspace\BedrockAdderRenderer\bow_test.png

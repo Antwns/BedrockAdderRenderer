@@ -1,0 +1,1 @@
+{"parent":"minecraft:block/iron_block","overrides":[{"predicate":{"custom_model_data":10000},"model":"blocks:item/ia_auto/iron_plating"},{"predicate":{"custom_model_data":10001},"model":"item/iron_block"}]}

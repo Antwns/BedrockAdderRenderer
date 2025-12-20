@@ -1,0 +1,22 @@
+{
+    "model": {
+        "type": "select",
+        "property": "display_context",
+        "cases": 
+        [
+            {
+                "when": "gui",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "expansion:items/armor/hazmat/helmet",
+                    "tints": []
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "expansion:items/armor/hazmat/helmet_3d",
+            "tints": []
+        }
+    }
+}

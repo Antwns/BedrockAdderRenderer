@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minecraft:block/mossy_cobblestone_slab"
+    },
+    "type=double,waterlogged=false": {
+      "model": "minecraft:block/mossy_cobblestone"
+    },
+    "type=top": {
+      "model": "minecraft:block/mossy_cobblestone_slab_top"
+    },
+    "type=double,waterlogged=true":{
+      "model": "expansion:blocks/cryonite_ore"
+    }
+  }
+}

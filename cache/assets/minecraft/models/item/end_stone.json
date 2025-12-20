@@ -1,0 +1,1 @@
+{"parent":"minecraft:block/end_stone","overrides":[{"predicate":{"custom_model_data":10000},"model":"blocks:item/ia_auto/polished_end_stone"},{"predicate":{"custom_model_data":10001},"model":"blocks:item/ia_auto/end_stone_pillar"},{"predicate":{"custom_model_data":10002},"model":"item/end_stone"}]}

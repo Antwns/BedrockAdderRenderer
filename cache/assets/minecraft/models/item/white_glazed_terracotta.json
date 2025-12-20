@@ -1,0 +1,1 @@
+{"parent":"minecraft:block/white_glazed_terracotta","overrides":[{"predicate":{"custom_model_data":10000},"model":"blocks:item/ia_auto/white_glazed_terracotta_pillar"},{"predicate":{"custom_model_data":10001},"model":"item/white_glazed_terracotta"}]}

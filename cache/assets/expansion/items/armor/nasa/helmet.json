@@ -1,0 +1,22 @@
+{
+    "model": {
+        "type": "select",
+        "property": "display_context",
+        "cases": 
+        [
+            {
+                "when": "gui",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "expansion:items/armor/nasa/helmet",
+                    "tints": []
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "expansion:items/armor/nasa/helmet_3d",
+            "tints": []
+        }
+    }
+}
