@@ -85,3 +85,4 @@
 [2025-12-20T15:54:08.393+02:00] Reading model json: cache\assets\workbenches\models\advanced_brewing_stand.json
 [2025-12-20T15:54:08.601+02:00] Rendering model to: E:\Workspace\BedrockAdderRenderer\brew_by_id.png
 [2025-12-20T15:54:08.995+02:00] Render finished. Wrote: E:\Workspace\BedrockAdderRenderer\brew_by_id.png
+[2025-12-20T16:01:42.725+02:00] clear-pack called (not implemented yet)
