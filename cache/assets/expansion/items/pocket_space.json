@@ -1,7 +1,0 @@
-{
-    "model": {
-        "type": "minecraft:model",
-        "model": "expansion:items/pocket_space",
-        "tints": []
-    }
-}

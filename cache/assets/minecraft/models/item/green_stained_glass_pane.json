@@ -1,1 +1,0 @@
-{"parent":"minecraft:item/generated","textures":{"layer0":"minecraft:block/green_stained_glass"},"overrides":[{"predicate":{"custom_model_data":10000},"model":"blocks:item/ia_auto/white_oak_leaves"},{"predicate":{"custom_model_data":10001},"model":"item/green_stained_glass_pane"}]}

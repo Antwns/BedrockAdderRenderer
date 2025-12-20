@@ -1,7 +1,0 @@
-{
-    "model": {
-        "type": "minecraft:model",
-        "model": "expansion:blocks/wireframe_red",
-        "tints": []
-    }
-}
