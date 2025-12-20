@@ -13,3 +13,5 @@ BedrockAdderRenderer render <size> <namespace:id> <output_png> [cacheDir]
 BedrockAdderRenderer clear-pack [cacheDir]
 
 Third-party: Uses LOOHP’s BlockModelRenderer (GPL v3.0)
+
+If you end up using it with your project you must give me credit and also provide a link to this source code to comply with GPL-3 license.
