@@ -32,6 +32,7 @@ public final class FaceImageBakingWorker
         }
 
         MinecraftModelFaceJson faceJson = elementJson.faces.get(faceName);
+
         if (faceJson == null || faceJson.texture == null)
         {
             return createTransparentImage();

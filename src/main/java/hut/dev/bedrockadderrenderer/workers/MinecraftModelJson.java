@@ -9,6 +9,8 @@ public final class MinecraftModelJson
     public String credit;
     public String gui_light;
 
+    public String parent;
+
     public Map<String, String> textures;
     public List<MinecraftModelElementJson> elements;
     public Map<String, MinecraftModelDisplayTransformJson> display;

@@ -37,11 +37,11 @@ public final class ModelRenderWorker
             throw new IllegalStateException("Model JSON not found: " + modelJsonFilePath);
         }
 
-        MinecraftModelJson modelJson = new ModelJsonReadingWorker(logger).readModelJson(modelJsonFilePath);
+        MinecraftModelJson resolvedModelJson = new ModelJsonResolvingWorker(logger).readResolvedModelJson(modelJsonFilePath, cacheAssetsDirectoryPath);
 
-        Model builtModel = new ModelBuildingWorker(logger).buildModelFromMinecraftJson(modelJson, cacheAssetsDirectoryPath);
+        Model builtModel = new ModelBuildingWorker(logger).buildModelFromMinecraftJson(resolvedModelJson, cacheAssetsDirectoryPath);
 
-        new ModelTransformApplyingWorker(logger).applyGuiDisplayTransform(builtModel, modelJson);
+        new ModelTransformApplyingWorker(logger).applyGuiDisplayTransform(builtModel, resolvedModelJson);
 
         builtModel.updateLighting(new Vector(-0.7, 1.0, -0.7), 1.25, 0.75);
 
