@@ -154,10 +154,41 @@ public final class CommandRoutingWorker
         }
         if (commandName.equalsIgnoreCase("render"))
         {
-            logger.info("render called (not implemented yet)");
-            return 0;
-        }
+            if (args.length < 4)
+            {
+                logger.error("render requires: <size> <namespace:id> <output_png> [cacheDir]");
+                printUsage();
+                return 1;
+            }
 
+            int outputImageSize;
+            try
+            {
+                outputImageSize = Integer.parseInt(args[1]);
+            }
+            catch (Exception exception)
+            {
+                logger.error("Invalid size: " + args[1]);
+                return 1;
+            }
+
+            String namespaceAndIdText = args[2];
+            java.nio.file.Path outputPngFilePath = java.nio.file.Paths.get(args[3]);
+
+            java.nio.file.Path cacheDirectoryPath = new PathResolvingWorker().resolveCacheDirectoryPath(args, 4);
+            java.nio.file.Path cacheAssetsDirectoryPath = cacheDirectoryPath.resolve("assets");
+
+            try
+            {
+                new ModelRenderWorker(logger).renderModelByNamespaceId(cacheAssetsDirectoryPath, outputImageSize, namespaceAndIdText, outputPngFilePath);
+                return 0;
+            }
+            catch (Exception exception)
+            {
+                logger.error("render failed", exception);
+                return 1;
+            }
+        }
         if (commandName.equalsIgnoreCase("clear-pack"))
         {
             logger.info("clear-pack called (not implemented yet)");

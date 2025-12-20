@@ -101,4 +101,10 @@ public final class ModelRenderWorker
             executorService.shutdownNow();
         }
     }
+
+    public void renderModelByNamespaceId(Path cacheAssetsDirectoryPath, int outputImageSize, String namespaceAndIdText, Path outputPngFilePath) throws Exception
+    {
+        Path modelJsonFilePath = new ModelPathResolvingWorker(logger).resolveModelJsonFilePath(cacheAssetsDirectoryPath, namespaceAndIdText);
+        renderModelJsonFile(modelJsonFilePath, cacheAssetsDirectoryPath, outputImageSize, outputPngFilePath);
+    }
 }

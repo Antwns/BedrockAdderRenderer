@@ -76,3 +76,12 @@
 [2025-12-19T20:53:16.137+02:00] Reading model json: E:\Workspace\BedrockAdderRenderer\cache\assets\ranged\models\frost_bow_2.json
 [2025-12-19T20:53:16.221+02:00] Rendering model to: E:\Workspace\BedrockAdderRenderer\bow_test.png
 [2025-12-19T20:53:16.449+02:00] Render finished. Wrote: E:\Workspace\BedrockAdderRenderer\bow_test.png
+[2025-12-20T15:53:51.838+02:00] Cache directory: E:\Workspace\BedrockAdderRenderer\cache
+[2025-12-20T15:53:51.868+02:00] Extracting vanilla jar assets from: C:\Users\Antwn\AppData\Roaming\.minecraft\versions\1.21.8\1.21.8.jar
+[2025-12-20T15:53:55.148+02:00] Extracting ItemsAdder generated.zip assets from: E:\Minecraft Stuff\New Public MCS\plugins\ItemsAdder\output\generated.zip
+[2025-12-20T15:53:56.982+02:00] Wrote pack state: cache\pack_state.json
+[2025-12-20T15:53:56.982+02:00] set-pack finished successfully.
+[2025-12-20T15:54:08.377+02:00] Resolved model json (fast path): cache\assets\workbenches\models\advanced_brewing_stand.json
+[2025-12-20T15:54:08.393+02:00] Reading model json: cache\assets\workbenches\models\advanced_brewing_stand.json
+[2025-12-20T15:54:08.601+02:00] Rendering model to: E:\Workspace\BedrockAdderRenderer\brew_by_id.png
+[2025-12-20T15:54:08.995+02:00] Render finished. Wrote: E:\Workspace\BedrockAdderRenderer\brew_by_id.png
