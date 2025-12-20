@@ -1,6 +1,7 @@
 plugins {
-    id 'java'
     id 'application'
+    id 'java'
+    id 'com.gradleup.shadow' version '8.3.9'
 }
 
 group = 'hut.dev'
@@ -27,5 +28,18 @@ dependencies {
 }
 
 application {
-    mainClass = 'hut.dev.bedrockadderrenderer.BedrockAdderRendererMain'
+    mainClass = "hut.dev.bedrockadderrenderer.BedrockAdderRendererMain"
+}
+
+tasks.jar {
+    manifest {
+        attributes["Main-Class"] = application.mainClass.get()
+    }
+}
+
+tasks.shadowJar {
+    archiveClassifier.set("all")
+    manifest {
+        attributes["Main-Class"] = application.mainClass.get()
+    }
 }
