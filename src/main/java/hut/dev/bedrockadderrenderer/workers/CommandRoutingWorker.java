@@ -191,8 +191,18 @@ public final class CommandRoutingWorker
         }
         if (commandName.equalsIgnoreCase("clear-pack"))
         {
-            logger.info("clear-pack called (not implemented yet)");
-            return 0;
+            java.nio.file.Path cacheDirectoryPath = new PathResolvingWorker().resolveCacheDirectoryPath(args, 1);
+
+            try
+            {
+                new CacheClearingWorker(logger).clearPackCache(cacheDirectoryPath);
+                return 0;
+            }
+            catch (Exception exception)
+            {
+                logger.error("clear-pack failed", exception);
+                return 1;
+            }
         }
 
         logger.error("Unknown command: " + commandName);

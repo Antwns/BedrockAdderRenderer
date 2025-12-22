@@ -50,6 +50,6 @@ public final class TextureLoadingWorker
             throw new IllegalStateException("ImageIO failed to read: " + textureFilePath);
         }
 
-        return loaded;
+        return new AnimatedTextureFirstFrameWorker(logger).getFirstFrameIfAnimated(textureFilePath, loaded);
     }
 }

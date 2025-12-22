@@ -43,3 +43,13 @@ tasks.shadowJar {
         attributes["Main-Class"] = application.mainClass.get()
     }
 }
+
+tasks.register('copyTestBatToLibs', Copy) {
+    from('test.bat')
+    into("${buildDir}/libs")
+    rename { 'test.bat' }
+}
+
+tasks.named('shadowJar') {
+    finalizedBy 'copyTestBatToLibs'
+}
