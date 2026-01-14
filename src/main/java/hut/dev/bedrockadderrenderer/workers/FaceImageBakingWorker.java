@@ -69,45 +69,62 @@ public final class FaceImageBakingWorker
 
     private BufferedImage cropUv(BufferedImage textureImage, double[] uv)
     {
-        if (uv == null || uv.length != 4)
+        if (uv == null || uv.length != 4 || textureImage == null)
         {
-            return textureImage;
+            return createTransparentImage();
         }
 
-        double scaleX = textureImage.getWidth() / 16.0;
-        double scaleY = textureImage.getHeight() / 16.0;
+        int texW = textureImage.getWidth();
+        int texH = textureImage.getHeight();
+
+        if (texW <= 0 || texH <= 0)
+        {
+            return createTransparentImage();
+        }
+
+        // Minecraft UVs are in 0–16 space
+        double scaleX = texW / 16.0;
+        double scaleY = texH / 16.0;
 
         double u1 = uv[0];
         double v1 = uv[1];
         double u2 = uv[2];
         double v2 = uv[3];
 
-        boolean flipHorizontally = u2 < u1;
-        boolean flipVertically = v2 < v1;
+        boolean flipH = u2 < u1;
+        boolean flipV = v2 < v1;
 
         double minU = Math.min(u1, u2);
         double maxU = Math.max(u1, u2);
         double minV = Math.min(v1, v2);
         double maxV = Math.max(v1, v2);
 
-        int x1 = (int)Math.round(minU * scaleX);
-        int y1 = (int)Math.round(minV * scaleY);
-        int x2 = (int)Math.round(maxU * scaleX);
-        int y2 = (int)Math.round(maxV * scaleY);
+        int x1 = (int)Math.floor(minU * scaleX);
+        int y1 = (int)Math.floor(minV * scaleY);
+        int x2 = (int)Math.ceil (maxU * scaleX);
+        int y2 = (int)Math.ceil (maxV * scaleY);
 
-        x1 = clamp(x1, 0, textureImage.getWidth());
-        x2 = clamp(x2, 0, textureImage.getWidth());
-        y1 = clamp(y1, 0, textureImage.getHeight());
-        y2 = clamp(y2, 0, textureImage.getHeight());
+        // Clamp start points
+        x1 = clamp(x1, 0, texW - 1);
+        y1 = clamp(y1, 0, texH - 1);
 
-        int width = Math.max(1, x2 - x1);
-        int height = Math.max(1, y2 - y1);
+        // Clamp end points
+        x2 = clamp(x2, x1 + 1, texW);
+        y2 = clamp(y2, y1 + 1, texH);
+
+        int width  = x2 - x1;
+        int height = y2 - y1;
+
+        if (width <= 0 || height <= 0)
+        {
+            return createTransparentImage();
+        }
 
         BufferedImage cropped = textureImage.getSubimage(x1, y1, width, height);
 
-        if (flipHorizontally || flipVertically)
+        if (flipH || flipV)
         {
-            cropped = flipImage(cropped, flipHorizontally, flipVertically);
+            cropped = flipImage(cropped, flipH, flipV);
         }
 
         return cropped;
