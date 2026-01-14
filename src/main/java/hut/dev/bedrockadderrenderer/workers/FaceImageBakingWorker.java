@@ -69,7 +69,8 @@ public final class FaceImageBakingWorker
 
     private BufferedImage cropUv(BufferedImage textureImage, double[] uv)
     {
-        if (uv == null || uv.length != 4 || textureImage == null)
+        // If texture is missing, return transparent
+        if (textureImage == null)
         {
             return createTransparentImage();
         }
@@ -80,6 +81,12 @@ public final class FaceImageBakingWorker
         if (texW <= 0 || texH <= 0)
         {
             return createTransparentImage();
+        }
+
+        // IMPORTANT: If UV is not provided or invalid, use the full texture (old behavior).
+        if (uv == null || uv.length != 4)
+        {
+            return textureImage;
         }
 
         // Minecraft UVs are in 0–16 space
@@ -104,11 +111,12 @@ public final class FaceImageBakingWorker
         int x2 = (int)Math.ceil (maxU * scaleX);
         int y2 = (int)Math.ceil (maxV * scaleY);
 
-        // Clamp start points
+        // Clamp to valid subimage bounds:
+        // subimage x,y must be within [0, texW-1] / [0, texH-1]
+        // subimage width/height must keep x+width <= texW, y+height <= texH
         x1 = clamp(x1, 0, texW - 1);
         y1 = clamp(y1, 0, texH - 1);
 
-        // Clamp end points
         x2 = clamp(x2, x1 + 1, texW);
         y2 = clamp(y2, y1 + 1, texH);
 
